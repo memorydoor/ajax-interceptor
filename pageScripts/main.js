@@ -101,7 +101,7 @@ let ajax_interceptor_qoweifjqon = {
           window.dispatchEvent(new CustomEvent("pageScript", {
             detail: {url: response.url, match}
           }));
-          txt = overrideTxt;
+          txt = eval(overrideTxt);
         }
       });
 
